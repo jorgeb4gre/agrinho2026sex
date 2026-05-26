@@ -1,1 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroSustentável - Tecnologia, Produção e Preservação</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body { font-family: 'Segoe UI', system-ui, sans-serif; }
+    .hero-bg {
+      background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://source.unsplash.com/random/1920x1080/?farm,drone');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
 
+  <!-- Cabeçalho -->
+  <header class="bg-green-700 text-white sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold flex items-center gap-2">
+        <i class="fas fa-leaf"></i> AgroSustentável
+      </h1>
+      <nav class="hidden md:flex gap-8">
+        <a href="#producao" class="hover:text-green-200">Produção</a>
+        <a href="#sustentabilidade" class="hover:text-green-200">Sustentabilidade</a>
+        <a href="#desafios" class="hover:text-green-200">Desafios</a>
+        <a href="#solucoes" class="hover:text-green-200">Soluções</a>
+        <a href="#conscientizacao" class="hover:text-green-200">Conscientização</a>
+      </nav>
+      <button class="md:hidden text-2xl" onclick="toggleMenu()">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero-bg h-screen flex items-center text-white">
+    <div class="max-w-4xl mx-auto text-center px-6">
+      <h2 class="text-5xl md:text-6xl font-bold mb-6">Produzir mais,<br>preservando melhor</h2>
+      <p class="text-xl mb-8">Tecnologia, agricultura e meio ambiente trabalhando juntos</p>
+      <a href="#conscientizacao" class="bg-green-600 hover:bg-green-500 px-8 py-4 rounded-full text-lg font-semibold inline-block">
+        Testar Agora
+      </a>
+    </div>
+  </section>
+
+  <!-- Seção 1 - Produção Agrícola -->
+  <section id="producao" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-green-700">Produção Agrícola no Brasil</h2>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <h3 class="text-2xl font-semibold mb-4">Importância Econômica</h3>
+          <ul class="space-y-4 text-lg">
+            <li>✅ Representa cerca de <strong>25% do PIB brasileiro</strong></li>
+            <li>✅ Maior exportador mundial de soja, carne e café</li>
+            <li>✅ Gera mais de 28 milhões de empregos</li>
+          </ul>
+        </div>
+        <div class="bg-green-50 p-8 rounded-2xl">
+          <h3 class="text-2xl font-semibold mb-4">Tecnologias Utilizadas</h3>
+          <p class="text-gray-600">GPS, sensores, drones e inteligência artificial estão revolucionando o campo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 2 - Sustentabilidade -->
+  <section id="sustentabilidade" class="py-20 bg-green-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-green-700">Sustentabilidade no Campo</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-2xl shadow">
+          <i class="fas fa-seedling text-4xl text-green-600 mb-4"></i>
+          <h3 class="font-bold text-xl">Conservação do Solo</h3>
+          <p>Plantio direto e rotação de culturas preservam a fertilidade.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow">
+          <i class="fas fa-solar-panel text-4xl text-yellow-500 mb-4"></i>
+          <h3 class="font-bold text-xl">Energias Limpas</h3>
+          <p>Painéis solares e biodigestores reduzem custos e emissões.</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl shadow">
+          <i class="fas fa-tint text-4xl text-blue-500 mb-4"></i>
+          <h3 class="font-bold text-xl">Uso Consciente da Água</h3>
+          <p>Irrigação inteligente pode economizar até 50% de água.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 3 - Desafios -->
+  <section id="desafios" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-red-600">Desafios Ambientais</h2>
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="text-center">
+          <h3 class="text-2xl font-bold text-red-500">Desmatamento</h3>
+          <p class="mt-4">Expansão agrícola ainda pressiona a Amazônia e Cerrado.</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-2xl font-bold text-red-500">Uso da Água</h3>
+          <p class="mt-4">Irrigação intensiva e risco de escassez em algumas regiões.</p>
+        </div>
+        <div class="text-center">
+          <h3 class="text-2xl font-bold text-red-500">Emissões de Carbono</h3>
+          <p class="mt-4">Pecuária e solos contribuem significativamente para GEE.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 4 - Soluções -->
+  <section id="solucoes" class="py-20 bg-green-700 text-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12">Soluções e Futuro</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div>
+          <h3 class="text-2xl font-semibold mb-6">Agricultura Regenerativa</h3>
+          <p class="text-lg">Integração lavoura-pecuária-floresta, drones e IA para produzir mais com menos impacto.</p>
+        </div>
+        <div>
+          <h3 class="text-2xl font-semibold mb-6">Tecnologias que Mudam o Jogo</h3>
+          <ul class="space-y-3 text-lg">
+            <li>🌱 Agricultura de Precisão</li>
+            <li>🚁 Drones agrícolas</li>
+            <li>💧 Irrigação Inteligente</li>
+            <li>☀️ Energia Solar no Campo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 5 - Conscientização -->
+  <section id="conscientizacao" class="py-20 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-4xl font-bold text-center mb-12 text-green-700">Conscientização e Ação</h2>
+
+      <!-- Quiz -->
+      <div class="mb-16">
+        <h3 class="text-2xl font-bold mb-6 text-center">Quiz: Quanto você sabe sobre Agro Sustentável?</h3>
+        <div id="quiz" class="max-w-2xl mx-auto bg-gray-100 p-8 rounded-2xl">
+          <p id="pergunta" class="text-xl font-medium mb-6"></p>
+          <div id="opcoes" class="space-y-3"></div>
+          <button onclick="proximaPergunta()" id="btn-proximo" class="hidden mt-6 bg-green-600 text-white px-8 py-3 rounded-full">Próxima</button>
+        </div>
+      </div>
+
+      <!-- Calculadora -->
+      <div class="max-w-2xl mx-auto">
+        <h3 class="text-2xl font-bold mb-6 text-center">Calculadora de Impacto Ambiental</h3>
+        <div class="bg-green-50 p-8 rounded-2xl">
+          <label class="block mb-2">Hectares cultivados:</label>
+          <input type="number" id="hectares" value="100" class="w-full p-3 border rounded-lg mb-6">
+
+          <button onclick="calcularImpacto()" class="w-full bg-green-600 hover:bg-green-500 text-white py-4 rounded-full text-lg font-semibold">
+            Calcular Economia
+          </button>
+
+          <div id="resultado" class="mt-6 text-center font-medium text-xl"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer class="bg-gray-900 text-white py-12">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-2xl font-bold mb-4">AgroSustentável</p>
+      <p>Por um agronegócio mais consciente e inovador</p>
+      <p class="mt-8 text-sm">© 2026 - Desenvolvido como projeto educativo</p>
+    </div>
+  </footer>
+
+  <script>
+    // Menu mobile
+    function toggleMenu() {
+      alert("Menu mobile - Em produção (você pode expandir isso depois)");
+    }
+
+    // Quiz Simples
+    let perguntaAtual = 0;
+    const quizData = [
+      {
+        pergunta: "Qual tecnologia ajuda a economizar água na irrigação?",
+        opcoes: ["Drones", "Irrigação Inteligente", "Plantio direto", "Biodigestor"],
+        correta: 1
+      },
+      {
+        pergunta: "O que é agricultura de precisão?",
+        opcoes: ["Uso de tratores antigos", "Aplicação localizada de insumos", "Só plantar soja", "Desmatar mais"],
+        correta: 1
+      }
+    ];
+
+    function carregarPergunta() {
+      document.getElementById("pergunta").innerText = quizData[perguntaAtual].pergunta;
+      const opcoesDiv = document.getElementById("opcoes");
+      opcoesDiv.innerHTML = "";
+
+      quizData[perguntaAtual].opcoes.forEach((op, i) => {
+        opcoesDiv.innerHTML += `
+          <button onclick="responder(${i})" class="w-full text-left p-4 bg-white hover:bg-green-100 rounded-lg">
+            ${op}
+          </button>`;
+      });
+    }
+
+    function responder(escolha) {
+      if (escolha === quizData[perguntaAtual].correta) {
+        alert("✅ Correto!");
+      } else {
+        alert("❌ Resposta errada. Tente novamente!");
+      }
+      document.getElementById("btn-proximo").classList.remove("hidden");
+    }
+
+    function proximaPergunta() {
+      perguntaAtual++;
+      if (perguntaAtual < quizData.length) {
+        carregarPergunta();
+        document.getElementById("btn-proximo").classList.add("hidden");
+      } else {
+        alert("🎉 Quiz finalizado! Obrigado por participar.");
+      }
+    }
+
+    // Calculadora
+    function calcularImpacto() {
+      const hectares = parseFloat(document.getElementById("hectares").value) || 100;
+      const economiaAgua = Math.round(hectares * 4500);
+      const reducaoCarbono = Math.round(hectares * 8.5);
+
+      document.getElementById("resultado").innerHTML = `
+        <p class="text-green-600">
+          Com tecnologias sustentáveis em ${hectares} hectares, você pode economizar:<br>
+          <strong>${economiaAgua.toLocaleString()} litros de água</strong> por safra<br>
+          <strong>${reducaoCarbono} toneladas de CO₂</strong>
+        </p>
+      `;
+    }
+
+    // Iniciar Quiz
+    window.onload = () => {
+      carregarPergunta();
+    };
+  </script>
+</body>
+</html>
