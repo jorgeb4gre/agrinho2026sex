@@ -251,3 +251,148 @@
   </script>
 </body>
 </html>
+
+Como usar:
+
+Copie todo o código acima
+Cole em um arquivo novo chamado index.html
+Abra o arquivo no navegador (Chrome, Edge, etc.)
+
+Quer que eu melhore alguma parte? Posso adicionar:
+
+Mais perguntas no quiz
+Mais páginas separadas
+Formulário de contato funcional
+Galeria de imagens
+Versão com React
+
+É só falar o que quer aprimorar! 🌱sem estilização , apenas textos✅ Aqui está a versão SIMPLIFICADA, sem estilização (apenas textos e estrutura básica):
+HTML<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroSustentável</title>
+</head>
+<body>
+
+  <h1>AgroSustentável</h1>
+  <p><strong>Produzir mais, preservando melhor</strong></p>
+  <hr>
+
+  <!-- Menu -->
+  <p>
+    <a href="#producao">Produção Agrícola</a> | 
+    <a href="#sustentabilidade">Sustentabilidade</a> | 
+    <a href="#desafios">Desafios Ambientais</a> | 
+    <a href="#solucoes">Soluções e Futuro</a> | 
+    <a href="#conscientizacao">Conscientização</a>
+  </p>
+  <hr>
+
+  <!-- Banner / Introdução -->
+  <h2>Bem-vindo ao AgroSustentável</h2>
+  <p>Site educativo sobre a integração entre tecnologia, produção agrícola e preservação ambiental no Brasil.</p>
+  <p>O agronegócio é essencial para a economia, mas precisa ser cada vez mais sustentável.</p>
+  <hr>
+
+  <!-- Seção 1 -->
+  <h2 id="producao">1. Produção Agrícola</h2>
+  <p><strong>Importância Econômica:</strong></p>
+  <ul>
+    <li>Representa cerca de 25% do PIB brasileiro</li>
+    <li>Principal responsável pelas exportações do país</li>
+    <li>Gera milhões de empregos diretos e indiretos</li>
+  </ul>
+
+  <p><strong>Tecnologias utilizadas:</strong></p>
+  <ul>
+    <li>Agricultura de Precisão</li>
+    <li>Drones agrícolas</li>
+    <li>Sistemas de monitoramento</li>
+  </ul>
+  <hr>
+
+  <!-- Seção 2 -->
+  <h2 id="sustentabilidade">2. Sustentabilidade no Campo</h2>
+  <p><strong>Práticas Ecológicas:</strong></p>
+  <ul>
+    <li>Conservação do solo</li>
+    <li>Rotação de culturas</li>
+    <li>Plantio direto</li>
+  </ul>
+
+  <p><strong>Energias Limpas:</strong></p>
+  <ul>
+    <li>Energia solar em fazendas</li>
+    <li>Biodigestores</li>
+    <li>Biocombustíveis</li>
+  </ul>
+  <hr>
+
+  <!-- Seção 3 -->
+  <h2 id="desafios">3. Desafios Ambientais</h2>
+  <ul>
+    <li><strong>Desmatamento:</strong> Expansão agrícola pressiona florestas</li>
+    <li><strong>Uso da Água:</strong> Consumo elevado na irrigação</li>
+    <li><strong>Emissões de Carbono:</strong> Metano da pecuária e N2O dos solos</li>
+  </ul>
+  <hr>
+
+  <!-- Seção 4 -->
+  <h2 id="solucoes">4. Soluções e Futuro</h2>
+  <p><strong>Inovações:</strong></p>
+  <ul>
+    <li>Agricultura Regenerativa</li>
+    <li>Integração Lavoura-Pecuária-Floresta (ILPF)</li>
+    <li>Irrigação inteligente</li>
+    <li>Uso de drones e sensores</li>
+  </ul>
+
+  <p>O futuro está na tecnologia aliada à preservação.</p>
+  <hr>
+
+  <!-- Seção 5 -->
+  <h2 id="conscientizacao">5. Conscientização e Ação</h2>
+
+  <h3>Quiz Rápido</h3>
+  <p>1. Qual tecnologia ajuda a economizar água?</p>
+  <p>a) Drones  b) Irrigação Inteligente  c) Tratores grandes</p>
+  <p><em>Resposta: b) Irrigação Inteligente</em></p>
+
+  <h3>Calculadora Simples de Impacto</h3>
+  <label>Hectares cultivados: </label>
+  <input type="number" id="hectares" value="100">
+  <button onclick="calcular()">Calcular</button>
+  <p id="resultado"></p>
+
+  <h3>Formulário de Contato</h3>
+  <form>
+    <p>Nome: <input type="text"></p>
+    <p>Email: <input type="email"></p>
+    <p>Mensagem: <textarea></textarea></p>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <hr>
+  <footer>
+    <p>AgroSustentável - Projeto Educativo</p>
+    <p>© 2026</p>
+  </footer>
+
+  <script>
+    function calcular() {
+      let hectares = document.getElementById("hectares").value;
+      let agua = Math.round(hectares * 4500);
+      let carbono = Math.round(hectares * 8.5);
+      
+      document.getElementById("resultado").innerHTML = `
+        Em ${hectares} hectares você pode economizar:<br>
+        ${agua.toLocaleString()} litros de água<br>
+        ${carbono} toneladas de CO₂
+      `;
+    }
+  </script>
+
+</body>
+</html>
